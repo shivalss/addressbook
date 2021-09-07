@@ -16,7 +16,7 @@ pipeline {
                 sh 'mvn cobertura:cobertura'
             }
         }
-         stage('Metrics') {
+        stage('Metrics') {
             steps { 
                 sh 'mvn -P metrics PMD:PMD'
             }
